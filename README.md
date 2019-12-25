@@ -1,7 +1,7 @@
 # SwiftString
 
 [![Version](https://img.shields.io/cocoapods/v/String+Extensions.svg?style=flat)](http://cocoapods.org/pods/String+Extensions)
-[![License](https://img.shields.io/cocoapods/l/String+Extensions.svg?style=flat)](http://cocoapods.org/pods/String+Extensions) ![Language](https://img.shields.io/badge/language-Swift%203.0-orange.svg) ![Language](https://img.shields.io/badge/language-Swift%204.0-orange.svg)
+[![License](https://img.shields.io/cocoapods/l/String+Extensions.svg?style=flat)](http://cocoapods.org/pods/String+Extensions) ![Language](https://img.shields.io/badge/language-Swift%205.0-green.svg)
 
 
 SwiftString is a lightweight string extension for Swift 3 and 4.
@@ -14,9 +14,9 @@ Note the original client side Swift 2 repo can be found here:
 ## This Fork
 
 This fork is intended as a server side utility.
-
-* It is Swift 3.x, 4.0 and Swift Package Manager (SPM) ready.
-* Added sigificant test coverage
+* It is Swift 5.0 and Swift Package Manager (SPM) ready.
+* Removed the warnings.
+* Removed the deprecated String methods.
 
 ## Swift 3.0.2, 3.1 only
 
@@ -38,6 +38,15 @@ If you have updated to Swift 4, or plan to in the near future, use the majorVers
 ```
 
 The latest release works for Swift 3.x and Swift 4 on macOS and Linux.
+
+## Swift 5.x
+
+Update for Swift 5 and above, major verion is 3
+``` swift
+    dependencies: [
+        .package(url: "https://github.com/iamjono/SwiftString.git", , from: "3.0.0")
+    ]
+```
 
 
 ## Usage
@@ -456,6 +465,8 @@ pod "String+Extensions"
 Andrew Mayne, andrew@redbricklab.com
 
 Swift 3 & 4 SPM module, Jonathan Guthrie, jono@guthrie.net.nz
+
+Swift 5 & 5 SPM module, Keshavakarthik S, kesh1988@gmail.com
 
 Cocoapods, Koji Murata, malt.koji@gmail.com
 

@@ -13,6 +13,12 @@ class SwiftStringTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
+    
+    func testDecodeHTML() {
+        //decode("&#64;")    --> "@"
+        let s = "&#64;".decodeHTML()
+        XCTAssert(s=="@", "Decode is valid")
+    }
 
 	func testBetween() {
 		let s = "The stupid brown fox"
@@ -272,6 +278,8 @@ class SwiftStringTests: XCTestCase {
 		let encoded = str.toBase64()
 		let decoded = encoded.fromBase64()
 		XCTAssertEqual(str, decoded, "Base64 does not match")
+        
+        
 	}
 
 	static var allTests : [(String, (SwiftStringTests) -> () throws -> Void)] {
